@@ -1,6 +1,7 @@
 {
   "dns": {
     "servers": [
+      {"tag": "Tor-Fakeip", "type": "fakeip", "inet4_range": "198.18.1.0/16"},
       {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
       {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "🚀 默认代理"}
@@ -9,6 +10,7 @@
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
       {"query_type": "HTTPS", "action": "reject"},
+      {"domain_suffix": [".onion"], "server": "Tor-Fakeip"},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
       {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"}
     ],
@@ -53,6 +55,7 @@
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"domain_suffix": ".onion", "outbound": "🧅 Tor"},
+      {"ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
       {"rule_set": "geosite-google", "outbound": "🍀 Google"},
