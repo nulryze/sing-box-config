@@ -54,6 +54,7 @@
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"ip_cidr": "51.83.15.212/32", "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "outbound": "🧅 Tor"},
       {"ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
