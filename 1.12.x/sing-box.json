@@ -54,7 +54,6 @@
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
-      {"ip_cidr": "51.83.15.212/32", "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "outbound": "🧅 Tor"},
       {"ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
@@ -76,7 +75,16 @@
       {"rule_set": "geoip-apple", "outbound": "🍏 Apple"},
       {"rule_set": "geoip-telegram", "outbound": "📲 Telegram"},
       {"rule_set": "geoip-netflix", "outbound": "🎥 Netflix"},
-      {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
+      {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"},
+      {"type": "logical",
+        "mode": "and",
+        "rules": [
+          {"ip_cidr": "51.83.15.212/32", "outbound": "🎯 全球直连"}
+        ],
+        "invert": false,
+        "action": "bypass",
+        "outbound": "direct"
+      }
     ],
     "rule_set": [
       {"tag": "geosite-cloudflare", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/cloudflare.json", "download_detour": "🎯 全球直连"},
