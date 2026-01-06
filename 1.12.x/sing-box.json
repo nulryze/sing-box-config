@@ -68,10 +68,10 @@
       {"rule_set": "geosite-tiktok", "outbound": "🎵 TikTok"},
       {"rule_set": "geosite-netflix", "outbound": "🎥 Netflix"},
       {"rule_set": "geosite-paypal", "outbound": "💶 PayPal"},
-      {"rule_set": "geosite-steamcn", "outbound": "🎯 全球直连"},
+      {"rule_set": ["geosite-steamcn","geosite-cloudflare"], "outbound": "🎯 全球直连"},
       {"rule_set": "geosite-steam", "outbound": "🎮 Steam"},
       {"rule_set": "geosite-!cn", "outbound": "🚀 默认代理"},
-      {"rule_set": ["geosite-cn","geosite-cloudflare"], "outbound": "🎯 全球直连"},
+      {"rule_set": "geosite-cn", "outbound": "🎯 全球直连"},
       {"rule_set": "geoip-google", "outbound": "🍀 Google"},
       {"rule_set": "geoip-apple", "outbound": "🍏 Apple"},
       {"rule_set": "geoip-telegram", "outbound": "📲 Telegram"},
@@ -79,7 +79,7 @@
       {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
-      {"tag": "geosite-cloudflare", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/cloudflare.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "geosite-cloudflare", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/cloudflare.json", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-ai", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs", "download_detour": "🎯 全球直连"},
