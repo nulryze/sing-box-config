@@ -54,7 +54,7 @@
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
-      {"ip_cidr": "51.83.15.212/32", "action": "bypass", "outbound": "🎯 全球直连"},
+      {"ip_cidr": "51.83.15.212/32", "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "outbound": "🧅 Tor"},
       {"ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
@@ -101,6 +101,7 @@
       {"tag": "geoip-netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/qljsyph/ruleset-icon/raw/refs/heads/main/sing-box/geoip/China-ASN-combined-ip.srs", "download_detour": "🎯 全球直连"}
     ],
+    "action": "bypass",
     "final": "🐠 漏网之鱼",
     "default_domain_resolver": {"server": "public"}
   },
