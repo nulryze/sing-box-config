@@ -17,7 +17,7 @@
     "final": "foreign",
     "strategy": "prefer_ipv4",
     "independent_cache": true,
-    "reverse_mapping": true
+    "reverse_mapping": false
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择", "♻️ 自动选择"]},
@@ -49,7 +49,6 @@
   ],
   "route": {
     "rules": [
-      {"ip_cidr": "51.83.15.212/32","action": "route","outbound": "🎯 全球直连"},
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
