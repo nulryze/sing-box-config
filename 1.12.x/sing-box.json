@@ -54,7 +54,7 @@
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
-      {"port": 22, "outbound": "🎯 全球直连"},
+      {"port": [21,22,3306], "outbound": "🎯 全球直连"},
       {"ip_cidr": "51.83.15.212/32","outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "outbound": "🧅 Tor"},
       {"domain_suffix": ["mikanani.me"], "outbound": "🚀 默认代理"},
