@@ -4,7 +4,7 @@
       {"tag": "Tor-Fakeip", "type": "fakeip", "inet4_range": "198.18.1.0/16"},
       {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
-      {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "🚀 默认代理"}
+      {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "DNS"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
@@ -33,6 +33,7 @@
     {"tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择","🚀 落地节点"]},
     {"tag": "🐬 OneDrive", "type": "selector", "outbounds": ["🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择","🚀 落地节点"]},
     {"tag": "🍏 Apple", "type": "selector", "outbounds": ["🎯 全球直连", "🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择","🚀 落地节点"]},
+    {"tag": "DNS", "type": "selector", "outbounds": ["🎯 全球直连", "🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择","🚀 落地节点"]},
     {"tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🚀 默认代理", "🎯 全球直连", "🐸 手动选择","🚀 落地节点"]},
     {"tag": "🚀 落地节点", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
     {"tag": "🧭 中转节点", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
