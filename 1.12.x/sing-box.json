@@ -12,7 +12,8 @@
       {"query_type": "HTTPS", "action": "reject"},
       {"domain_suffix": [".onion"], "server": "Tor-Fakeip"},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
-      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"}
+      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"},
+      {"domain_suffix": ["geosite-ai","geosite-youtube","geosite-spotify","geosite-tiktok","geosite-netflix"],"server": "foreign"}
     ],
     "final": "foreign",
     "strategy": "prefer_ipv4",
