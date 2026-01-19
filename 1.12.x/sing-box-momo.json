@@ -116,7 +116,7 @@
       {"tag": "geoip-jp", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/jp.srs", "download_detour": "🎯 全球直连"}
     ],
     "final": "🐠 漏网之鱼",
-    "default_domain_resolver": {"server": "foreign"}
+    "default_domain_resolver": {"server": "public"}
   },
   "inbounds": [
     {
