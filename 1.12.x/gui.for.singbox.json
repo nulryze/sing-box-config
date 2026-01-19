@@ -151,8 +151,8 @@
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false,
-    "reverse_mapping": true
-     "final": "foreign",
+    "reverse_mapping": true,
+    "final": "foreign",
     "strategy": "prefer_ipv4"
   }
 }
