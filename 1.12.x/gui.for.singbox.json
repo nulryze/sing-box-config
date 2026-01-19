@@ -64,7 +64,6 @@
     {"tag": "🇰🇷 韩国手动", "type": "selector", "outbounds": []},
     {"tag": "🇺🇲 美国手动", "type": "selector", "outbounds": []},
     {"tag": "🇩🇪 德国手动", "type": "selector", "outbounds": []},
-    {"tag": "🧅 Tor", "type": "selector", "outbounds": []},
     {"tag": "🐸 手动选择", "type": "selector", "outbounds": ["🚀 落地节点"]},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": [], "interval": "10m", "tolerance": 100},
     {"tag": "🍃 延迟辅助", "type": "urltest", "outbounds": ["🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🚀 落地节点", "🐸 手动选择", "♻️ 自动选择", "🎯 全球直连"]},
