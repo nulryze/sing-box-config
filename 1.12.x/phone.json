@@ -28,6 +28,7 @@
     {"tag": "👨‍💻 Github", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动", "🐸 手动选择"]},
     {"tag": "📲 Telegram", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动", "🐸 手动选择"]},
     {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动", "🐸 手动选择"]},
+    {"tag": "🎧 Spotify", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动", "🐸 手动选择"]},
     {"tag": "🎥 Netflix", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动", "🐸 手动选择"]},
     {"tag": "💶 PayPal", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动", "🐸 手动选择"]},
     {"tag": "🎮 Steam", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动", "🐸 手动选择"]},
@@ -56,6 +57,7 @@
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"rule_set": "geosite-spotify", "outbound": "🎧 Spotify"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
       {"rule_set": "geosite-google", "outbound": "🍀 Google"},
@@ -79,6 +81,7 @@
       {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
+      {"tag": "geosite-spotify", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/spotify.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-fakeipfilter", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/fakeipfilter.json", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-ai", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连"},
