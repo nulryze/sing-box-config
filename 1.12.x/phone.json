@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
-      {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "🚀 默认代理"},
+      {"tag": "foreign", "type": "https", "server": "8.8.8.8", "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -36,13 +36,17 @@
     {"tag": "🍏 Apple", "type": "selector", "outbounds": ["🎯 全球直连", "🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动"]},
     {"tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🚀 默认代理", "🎯 全球直连"]},
     {"tag": "🇭🇰 香港手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}, {"action": "exclude", "keywords": ["免费"]}]},
+    {"tag": "🇹🇼 台湾手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇹🇼|TW|tw|台湾|台|TaiWan"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇯🇵 日本手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇸🇬 狮城手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}, {"action": "exclude", "keywords": ["免费"]}]},
+    {"tag": "🇰🇷 韩国手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["韩国|韩|KR|🇰🇷|kr"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇺🇲 美国手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
+    {"tag": "🇩🇪 德国手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["德国|德|DE|de|🇩🇪"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
+    {"tag": "🇳🇱 荷兰手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["荷兰|🇳🇱|nl|NL]"}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},   
     {"tag": "🐸 手动选择", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|GB|Expire Date"]}]},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"]}], "interval": "10m", "tolerance": 100},
     {"tag": "🍃 延迟辅助", "type": "urltest", "outbounds": ["🚀 默认代理", "🎯 全球直连"]},
-    {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🧠 AI", "📹 YouTube", "🍀 Google", "👨‍💻 Github", "📲 Telegram", "🎵 TikTok", "🎥 Netflix", "💶 PayPal", "🎮 Steam", "🪟 Microsoft", "🐬 OneDrive", "🍏 Apple", "🐠 漏网之鱼", "🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择", "♻️ 自动选择", "🍃 延迟辅助", "🎯 全球直连"]},
+    {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🧠 AI", "📹 YouTube", "🍀 Google", "👨‍💻 Github", "📲 Telegram", "🎵 TikTok", "🎥 Netflix", "💶 PayPal", "🎮 Steam", "🪟 Microsoft", "🐬 OneDrive", "🍏 Apple", "🐠 漏网之鱼", "🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择", "♻️ 自动选择", "🍃 延迟辅助", "🎯 全球直连"]},
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "route": {
@@ -104,9 +108,24 @@
   "inbounds": [
     {
       "type": "tun",
-      "address": "172.19.0.1/30",
-      "mtu": 9000,
-      "auto_route": true
+      "address": [
+        "172.19.0.0/30",
+        "fdfe:dcba:9876::0/126"
+      ],
+      "stack": "mixed",
+      "auto_route": true,
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 7890
+        }
+      }
+    },
+    {
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 7890
     }
   ],
   "experimental": {
