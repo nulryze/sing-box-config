@@ -63,7 +63,6 @@
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"port": [21,22,3306,8008], "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
-      {"rule_set": "geosite-cloudflare", "outbound": "🎯 全球直连"},
       {"domain_suffix": ["api.cloudflare.com"], "outbound": "🎯 全球直连"},
       {"domain_suffix": ["mikanani.me"], "outbound": "🚀 默认代理"},
       {"rule_set": "geosite-bahamut", "outbound": "🇹🇼 台湾手动"},
