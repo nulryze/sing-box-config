@@ -10,7 +10,7 @@
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
       {"query_type": "HTTPS", "action": "reject"},
-      {"inbound": ["bt-in"], "server": "local"}
+      {"inbound": ["bt-in"], "server": "local"},
       {"domain_suffix": [".onion"], "server": "fakeip"},
       {"rule_set": "geosite-fakeipfilter", "server": "local"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1},
