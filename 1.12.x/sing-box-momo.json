@@ -10,6 +10,7 @@
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
       {"query_type": "HTTPS", "action": "reject"},
+      {"inbound": ["bt-in"], "server": "local"},
       {"domain_suffix": [".onion"], "server": "Tor-Fakeip"},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
       {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"},
@@ -58,8 +59,9 @@
     "rules": [
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
-      {"ip_is_private": true, "ip_cidr": ["198.41.192.0/24","198.41.200.0/24","51.83.15.212/32"], "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
+      {"ip_is_private": true, "ip_cidr": ["198.41.192.0/24","198.41.200.0/24","51.83.15.212/32"], "outbound": "🎯 全球直连"},
+      {"inbound": "bt-in", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"port": [21,22,3306,8008], "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
@@ -132,6 +134,12 @@
       "type": "http",
       "listen": "::",
       "listen_port": 8080
+    },
+    {
+      "type": "socks",
+      "tag": "bt-in",
+      "listen": "::",
+      "listen_port": 20000
     },
     {
       "tag": "socks-in",
