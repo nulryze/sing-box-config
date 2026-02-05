@@ -63,7 +63,6 @@
       {"inbound": "bt-in", "outbound": "🎯 全球直连"},
       {"ip_is_private": true, "ip_cidr": ["51.83.15.212/32"], "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
-      {"ip_cidr": ["198.41.192.0/24","198.41.200.0/24"], "outbound": "🐸 手动选择"},
       {"port": [21,22,3306,8008], "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
       {"domain_suffix": ["api.cloudflare.com"], "outbound": "🎯 全球直连"},
