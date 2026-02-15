@@ -10,7 +10,7 @@
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
       {"query_type": "HTTPS", "action": "reject"},
-      {"inbound": ["bt-in"], "server": "local"},
+      {"inbound": ["direct-in"], "server": "local"},
       {"domain_suffix": [".onion"], "server": "fakeip"},
       {"rule_set": "geosite-fakeipfilter", "server": "local"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1},
@@ -60,12 +60,12 @@
     "rules": [
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
-      {"ip_is_private": true, "ip_cidr": "51.83.15.212/32", "outbound": "🎯 全球直连"},
-      {"inbound": "bt-in", "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
+      {"inbound": "direct-in", "outbound": "🎯 全球直连"},
+      {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"ip_is_private": true, "ip_cidr": ["198.41.192.0/24","198.41.200.0/24","51.83.15.212/32"], "outbound": "🎯 全球直连"},
       {"port": [21,22,3306,8008], "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "outbound": "🧅 Tor"},
-      {"clash_mode": "global", "outbound": "GLOBAL"},
       {"domain_suffix": ["api.cloudflare.com"], "outbound": "🎯 全球直连"},
       {"domain_suffix": ["mikanani.me"], "outbound": "🚀 默认代理"},
       {"rule_set": "geosite-bahamut", "outbound": "🇹🇼 台湾手动"},
@@ -146,7 +146,7 @@
     },
     {
       "type": "socks",
-      "tag": "bt-in",
+      "tag": "direct-in",
       "listen": "::",
       "listen_port": 20000
     },
