@@ -11,7 +11,7 @@
       {"clash_mode": "global", "server": "foreign"},
       {"query_type": "HTTPS", "action": "reject"},
       {"inbound": ["direct-in"], "server": "local"},
-      {"domain_suffix": ["cf.177757.xyz"], "server": "local"}
+      {"domain_suffix": ["cf.177757.xyz"], "server": "local"},
       {"domain_suffix": [".onion"], "server": "Tor-Fakeip"},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
       {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"}
