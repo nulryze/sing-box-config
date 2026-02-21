@@ -23,6 +23,7 @@
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["🐸 手动选择","🚀 落地节点","🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "♻️ 自动选择", "🎯 全球直连"]},
+    {"tag": "📺 Bilibili", "type": "selector", "outbounds": ["🚀 默认代理","🐸 手动选择","🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🎯 全球直连"]},
     {"tag": "🧠 AI", "type": "selector", "outbounds": ["🚀 默认代理","🐸 手动选择","🚀 落地节点","🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "♻️ 自动选择", "🎯 全球直连"]},
     {"tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 默认代理","🐸 手动选择","🚀 落地节点","🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "♻️ 自动选择", "🎯 全球直连"]},
     {"tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 默认代理","🐸 手动选择","🚀 落地节点","🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "♻️ 自动选择", "🎯 全球直连"]},
@@ -52,7 +53,7 @@
     {"tag": "🐸 手动选择", "type": "selector", "outbounds": []},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": [], "interval": "10m", "tolerance": 100},
     {"tag": "🍃 延迟辅助", "type": "urltest", "outbounds": ["🚀 默认代理","🐸 手动选择","🚀 落地节点","🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "♻️ 自动选择", "🎯 全球直连"]},
-    {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🧠 AI", "📹 YouTube", "🍀 Google", "👨‍💻 Github", "📲 Telegram", "🎵 TikTok", "🎧 Spotify", "🎥 Netflix", "💶 PayPal", "🎮 Steam", "🪟 Microsoft", "🐬 OneDrive", "🍏 Apple", "🐠 漏网之鱼", "🚀 落地节点", "🧭 中转节点","🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动","🧅 Tor", "🐸 手动选择", "♻️ 自动选择", "🍃 延迟辅助", "🎯 全球直连"]},
+    {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "📺 Bilibili", "🧠 AI", "📹 YouTube", "🍀 Google", "👨‍💻 Github", "📲 Telegram", "🎵 TikTok", "🎧 Spotify", "🎥 Netflix", "💶 PayPal", "🎮 Steam", "🪟 Microsoft", "🐬 OneDrive", "🍏 Apple", "🐠 漏网之鱼", "🚀 落地节点", "🧭 中转节点","🇭🇰 香港手动", "🇹🇼 台湾手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇰🇷 韩国手动", "🇺🇲 美国手动", "🇩🇪 德国手动", "🇳🇱 荷兰手动","🧅 Tor", "🐸 手动选择", "♻️ 自动选择", "🍃 延迟辅助", "🎯 全球直连"]},
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "route": {
@@ -75,10 +76,11 @@
       {"domain_suffix": [".de","rakuten.tv","megogo.net","channel5.com","shudder.com"], "outbound": "🇩🇪 德国手动"},
       {"domain_suffix": [".nl","skyshowtime.com","skyshowtimeuk.data.adobedc.net","cssott.com","4ac1dd56e493354be504f063e4ae3440a13c6776.cws.conviva.com","videoland.com"], "outbound": "🇳🇱 荷兰手动"},
       {"rule_set": ["geosite-bahamut","geosite-litv","geosite-kktv","geosite-hinet","geosite-catchplay"], "outbound": "🇹🇼 台湾手动"},
-      {"rule_set": ["geosite-bilibili","geosite-nowe","geosite-viu","geosite-mytvsuper"], "outbound": "🇭🇰 香港手动"},
+      {"rule_set": ["geosite-nowe","geosite-viu","geosite-mytvsuper"], "outbound": "🇭🇰 香港手动"},
       {"rule_set": ["geosite-dmm","geosite-abema"], "outbound": "🇯🇵 日本手动"},
       {"rule_set": ["geosite-naver"], "outbound":  "🇰🇷 韩国手动"},
       {"rule_set": ["geosite-hulu","geosite-fox","geosite-discoveryplus","geosite-sling","geosite-amc","geosite-hbo"], "outbound": "🇺🇲 美国手动"},
+      {"rule_set": ["geosite-bilibili"], "outbound":  "📺 Bilibili"},
       {"rule_set": "geosite-spotify", "outbound": "🎧 Spotify"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
