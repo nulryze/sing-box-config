@@ -70,12 +70,14 @@
       {"domain_suffix": [".tw","4gtv.tv","app-measurement.com","litv.tv","litvfreepc.akamaized.net"], "outbound": "🇹🇼 台湾手动"},
       {"domain_suffix": [".hk","bilibili.com"], "outbound": "🇭🇰 香港手动"},
       {"domain_suffix": [".jp","radiko-cf.com","kddi-video.com","nico","niconico.com","clubdam.com"], "outbound": "🇯🇵 日本手动"},
+      {"domain_suffix": [".kr","wavve.com","tving.com","coupangplay.com","spotvnow.com","afreecatv.com"], "outbound": "🇰🇷 韩国手动"},
       {"domain_suffix": [".us","onetrust.com","starz.com","philo.com","fxnetworks.com",":crackle.com","cwtv.com","aetv.com","ccpa-service.sp-prod.net","peacock.com","peacocktv.com","go.tlc.com","popcornflix","c.evidon.com","atttvnow.com","Hotstar","kocowa.com","pluto.tv","tubitv.com","fubo.tv","shudder.com","geolocation.onetrust.com","paramountplus.com","cbsi.live.ott.irdeto.com","syncbak.com","cbsaavideo.com","cbsi.com","cbsivideo.com","pplusstatic.com","link.theplatform.com","acorn.tv","boltdns.net","api.rlje.net","brightcove.com","akamaized.net","cf.md.bbci.co.uk","britbox.com","d2z3p34itxwaj7.cloudfront.net","nfl.com","encoretvb.com","akamaihd.net","jwpsrv.com","jwplatform.com","nbcuni.com","nbc.com"], "outbound": "🇺🇲 美国手动"},
       {"domain_suffix": [".de","rakuten.tv","megogo.net","channel5.com","shudder.com"], "outbound": "🇩🇪 德国手动"},
       {"domain_suffix": [".nl","skyshowtime.com","skyshowtimeuk.data.adobedc.net","cssott.com","4ac1dd56e493354be504f063e4ae3440a13c6776.cws.conviva.com","videoland.com"], "outbound": "🇳🇱 荷兰手动"},
       {"rule_set": ["geosite-bahamut","geosite-litv","geosite-kktv","geosite-hinet","geosite-catchplay"], "outbound": "🇹🇼 台湾手动"},
       {"rule_set": ["geosite-bilibili!cn","geosite-nowe","geosite-viu","geosite-mytvsuper"], "outbound": "🇭🇰 香港手动"},
       {"rule_set": ["geosite-dmm","geosite-abema","geosite-hbo"], "outbound": "🇯🇵 日本手动"},
+      {"rule_set": ["geosite-naver"], "outbound":  "🇰🇷 韩国手动"},
       {"rule_set": ["geosite-hulu","geosite-fox","geosite-discoveryplus","geosite-sling","geosite-amc"], "outbound": "🇺🇲 美国手动"},
       {"rule_set": "geosite-spotify", "outbound": "🎧 Spotify"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
@@ -100,6 +102,7 @@
       {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
+      {"tag": "geosite-naver", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/naver.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-amc", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/amc.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-sling", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/sling.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-discoveryplus", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/discoveryplus.srs", "download_detour": "🎯 全球直连"},
