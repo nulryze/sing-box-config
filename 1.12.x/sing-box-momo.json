@@ -67,7 +67,7 @@
       {"domain_suffix": ".onion", "ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
       {"domain_suffix": ["api.cloudflare.com",".cn"], "outbound": "🎯 全球直连"},
       {"domain_suffix": ["mikanani.me"], "outbound": "🚀 默认代理"},
-      {"domain_suffix": ["4gtv.tv",".tw"], "outbound": "🚀 默认代理"},
+      {"domain_suffix": ["4gtv.tv",".tw"], "outbound": "🇹🇼 台湾手动"},
       {"rule_set": ["geosite-bahamut","geosite-litv","geosite-kktv","geosite-hinet","geosite-catchplay","geosite-bilibili!cn"], "outbound": "🇹🇼 台湾手动"},
       {"rule_set": "geosite-spotify", "outbound": "🎧 Spotify"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
