@@ -70,7 +70,7 @@
       {"domain_suffix": [".tw","4gtv.tv","app-measurement.com","litv.tv","litvfreepc.akamaized.net"], "outbound": "🇹🇼 台湾手动"},
       {"domain_suffix": [".hk","bilibili.com"], "outbound": "🇭🇰 香港手动"},
       {"domain_suffix": [".jp","radiko-cf.com","kddi-video.com","nico","niconico.com","clubdam.com"], "outbound": "🇯🇵 日本手动"},
-      {"domain_suffix": [".us","onetrust.com","starz.com","philo.com","fxnetworks.com",":crackle.com","cwtv.com","aetv.com","ccpa-service.sp-prod.net","peacock.com","peacocktv.com","popcornflix","c.evidon.com","atttvnow.com","Hotstar","kocowa.com","pluto.tv","tubitv.com","fubo.tv","shudder.com","geolocation.onetrust.com"], "outbound": "🇺🇲 美国手动"},
+      {"domain_suffix": [".us","onetrust.com","starz.com","philo.com","fxnetworks.com",":crackle.com","cwtv.com","aetv.com","ccpa-service.sp-prod.net","peacock.com","peacocktv.com","popcornflix","c.evidon.com","atttvnow.com","Hotstar","kocowa.com","pluto.tv","tubitv.com","fubo.tv","shudder.com","geolocation.onetrust.com","paramountplus.com","cbsi.live.ott.irdeto.com","syncbak.com","cbsaavideo.com","cbsi.com","cbsivideo.com","pplusstatic.com","link.theplatform.com","acorn.tv","boltdns.net","api.rlje.net","brightcove.com","akamaized.net","cf.md.bbci.co.uk","britbox.com","d2z3p34itxwaj7.cloudfront.net","nfl.com","encoretvb.com","akamaihd.net","jwpsrv.com","jwplatform.com"], "outbound": "🇺🇲 美国手动"},
       {"rule_set": ["geosite-bahamut","geosite-litv","geosite-kktv","geosite-hinet","geosite-catchplay"], "outbound": "🇹🇼 台湾手动"},
       {"rule_set": ["geosite-bilibili!cn","geosite-nowe","geosite-viu","geosite-mytvsuper"], "outbound": "🇭🇰 香港手动"},
       {"rule_set": ["geosite-dmm","geosite-abema","geosite-hbo"], "outbound": "🇯🇵 日本手动"},
