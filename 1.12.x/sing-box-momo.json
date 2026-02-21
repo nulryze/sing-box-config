@@ -70,7 +70,7 @@
       {"domain_suffix": ["4gtv.tv",".tw","app-measurement.com","nowe.com","now.com","now-tv.com","nowestatic.com","litv.tv","litvfreepc.akamaized.net"], "outbound": "🇹🇼 台湾手动"},
       {"domain_suffix": ["bilibili.com"], "outbound": "🇭🇰 香港手动"},
       {"rule_set": ["geosite-bahamut","geosite-litv","geosite-kktv","geosite-hinet","geosite-catchplay"], "outbound": "🇹🇼 台湾手动"},
-      {"rule_set": ["geosite-bilibili!cn"], "outbound": "🇭🇰 香港手动"},
+      {"rule_set": ["geosite-bilibili!cn","geosite-nowe","geosite-viu","geosite-mytvsuper"], "outbound": "🇭🇰 香港手动"},
       {"rule_set": "geosite-spotify", "outbound": "🎧 Spotify"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
@@ -94,6 +94,9 @@
       {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
+      {"tag": "geosite-mytvsuper", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/mytvsuper.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "geosite-viu", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/viu.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "geosite-nowe", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/now.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-bilibili!cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/bilibili@!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-hbo", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/hbo.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-catchplay", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/catchplay.srs", "download_detour": "🎯 全球直连"},
