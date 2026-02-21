@@ -70,9 +70,11 @@
       {"domain_suffix": [".tw","4gtv.tv","app-measurement.com","litv.tv","litvfreepc.akamaized.net"], "outbound": "🇹🇼 台湾手动"},
       {"domain_suffix": [".hk","bilibili.com"], "outbound": "🇭🇰 香港手动"},
       {"domain_suffix": [".jp","radiko-cf.com","kddi-video.com","nico","niconico.com","clubdam.com"], "outbound": "🇯🇵 日本手动"},
+      {"domain_suffix": [".us","onetrust.com","starz.com","philo.com","fxnetworks.com",":crackle.com","cwtv.com","aetv.com","ccpa-service.sp-prod.net","peacock.com","peacocktv.com","popcornflix","c.evidon.com","atttvnow.com","Hotstar","kocowa.com","pluto.tv","tubitv.com","fubo.tv","shudder.com","geolocation.onetrust.com"], "outbound": "🇺🇲 美国手动"},
       {"rule_set": ["geosite-bahamut","geosite-litv","geosite-kktv","geosite-hinet","geosite-catchplay"], "outbound": "🇹🇼 台湾手动"},
       {"rule_set": ["geosite-bilibili!cn","geosite-nowe","geosite-viu","geosite-mytvsuper"], "outbound": "🇭🇰 香港手动"},
-      {"rule_set": ["geosite-dmm","geosite-abema","geosite-hulu"], "outbound": "🇯🇵 日本手动"},
+      {"rule_set": ["geosite-dmm","geosite-abema","geosite-hbo"], "outbound": "🇯🇵 日本手动"},
+      {"rule_set": ["geosite-hulu","geosite-fox","geosite-discoveryplus","geosite-sling",], "outbound": "🇺🇲 美国手动"},
       {"rule_set": "geosite-spotify", "outbound": "🎧 Spotify"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
@@ -96,6 +98,9 @@
       {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
+      {"tag": "geosite-sling", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/sling.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "geosite-discoveryplus", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/discoveryplus.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "geosite-fox", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/fox.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-hulu", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/hulu.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-abema", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/abema.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-dmm", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/dmm.srs", "download_detour": "🎯 全球直连"},
