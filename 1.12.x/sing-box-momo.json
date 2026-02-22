@@ -2,7 +2,7 @@
   "dns": {
     "servers": [
       {"tag": "Tor-Fakeip", "type": "fakeip", "inet4_range": "198.18.1.0/16"},
-      {"tag": "local", "type": "udp", "server": "211.140.188.188"},
+      {"tag": "local", "type": "udp", "server": "223.6.6.6"},
       {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
       {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "DNS"}
     ],
