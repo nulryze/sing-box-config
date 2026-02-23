@@ -13,7 +13,7 @@
       {"inbound": ["direct-in"], "server": "local"},
       {"domain_suffix": ["177757.xyz","182682.xyz","cnae.top","19931110.xyz","468123.xyz","nexusmods.com","3666888.xyz","090227.xyz","saas.sin.fan"], "server": "local"},
       {"domain_suffix": [".onion"], "server": "Tor-Fakeip"},
-      {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com","anyrouter.top","openai.api-test.us.ci","api.freestyle.cc.cd"], "server": "foreign"},
+      {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com","anyrouter.top","openai.api-test.us.ci","api.freestyle.cc.cd","anthorpic.us.ci"], "server": "foreign"},
       {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"}
     ],
     "final": "foreign",
@@ -67,7 +67,7 @@
       {"port": [21,22,3306,8008], "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
       {"domain_suffix": [".cn","api.cloudflare.com"], "outbound": "🎯 全球直连"},
-      {"domain_suffix": ["mikanani.me","anyrouter.top","openai.api-test.us.ci","api.freestyle.cc.cd"], "outbound": "🚀 默认代理"},
+      {"domain_suffix": ["mikanani.me","anyrouter.top","openai.api-test.us.ci","api.freestyle.cc.cd","anthorpic.us.ci"], "outbound": "🚀 默认代理"},
       {"domain_suffix": [".tw","4gtv.tv","app-measurement.com","litv.tv","litvfreepc.akamaized.net"], "outbound": "🇹🇼 台湾手动"},
       {"domain_suffix": [".hk"], "outbound": "🇭🇰 香港手动"},
       {"domain_suffix": [".jp","radiko-cf.com","kddi-video.com","nico","niconico.com","clubdam.com"], "outbound": "🇯🇵 日本手动"},
