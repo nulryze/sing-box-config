@@ -66,7 +66,6 @@
       {"ip_is_private": true, "ip_cidr": ["198.41.192.0/24","198.41.200.0/24","51.83.15.212/32"], "outbound": "🎯 全球直连"},
       {"port": [21,22,3306,8008], "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "ip_cidr": "198.18.1.0/16", "outbound": "🧅 Tor"},
-      {"domain_suffix": [".cn"], "outbound": "🎯 全球直连"},
       {"domain_suffix": ["mikanani.me","anyrouter.top","openai.api-test.us.ci","api.freestyle.cc.cd","anthorpic.us.ci"], "outbound": "🚀 默认代理"},
       {"domain_suffix": [".tw","4gtv.tv","app-measurement.com","litv.tv","litvfreepc.akamaized.net"], "outbound": "🇹🇼 台湾手动"},
       {"domain_suffix": [".hk"], "outbound": "🇭🇰 香港手动"},
