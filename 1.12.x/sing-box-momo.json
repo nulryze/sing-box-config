@@ -18,7 +18,7 @@
     ],
     "final": "foreign",
     "strategy": "prefer_ipv4",
-    "independent_cache": true,
+    "disable_cache": true,
     "reverse_mapping": true
   },
   "outbounds": [
