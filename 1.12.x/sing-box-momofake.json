@@ -66,7 +66,7 @@
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"inbound": "direct-in", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
-      
+      {"domain_suffix": ["177757.xyz","182682.xyz","cnae.top","19931110.xyz","468123.xyz","nexusmods.com","3666888.xyz","090227.xyz","saas.sin.fan"],"outbound": "🎯 全球直连"},
       {"port": [21,22,3306,8008,8080,61028], "outbound": "🎯 全球直连"},
       {"domain_suffix": ".onion", "outbound": "🧅 Tor"},
       {"domain_suffix": ["api.cloudflare.com"], "outbound": "🎯 全球直连"},
