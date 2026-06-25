@@ -165,43 +165,43 @@
     {
       "type": "socks",
       "tag": "direct-in",
-      "listen": "::",
+      "listen": "192.168.1.1",
       "listen_port": 20000
     },
     {
       "type": "socks",
       "tag": "hk-in",
-      "listen": "127.0.0.1",
+      "listen": "192.168.1.1",
       "listen_port": 20100
     },
     {
       "type": "socks",
       "tag": "tw-in",
-      "listen": "127.0.0.1",
+      "listen": "192.168.1.1",
       "listen_port": 20200
     },
     {
       "type": "socks",
       "tag": "jp-in",
-      "listen": "127.0.0.1",
+      "listen": "192.168.1.1",
       "listen_port": 20300
     },
     {
       "type": "socks",
       "tag": "sg-in",
-      "listen": "127.0.0.1",
+      "listen": "192.168.1.1",
       "listen_port": 20400
     },
     {
       "type": "socks",
       "tag": "us-in",
-      "listen": "127.0.0.1",
+      "listen": "192.168.1.1",
       "listen_port": 20500
     },
     {
       "type": "socks",
       "tag": "kr-in",
-      "listen": "127.0.0.1",
+      "listen": "192.168.1.1",
       "listen_port": 20600
     },
     {
