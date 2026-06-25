@@ -59,6 +59,12 @@
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"inbound": "direct-in", "outbound": "🎯 全球直连"},
+      {"inbound": "hk-in", "outbound": "🇭🇰 香港手动"},
+      {"inbound": "jp-in", "outbound": "🇯🇵 日本手动"},
+      {"inbound": "sg-in", "outbound": "🇸🇬 狮城手动"},
+      {"inbound": "us-in", "outbound": "🇺🇲 美国手动"},
+      {"inbound": "kr-in", "outbound": "🇰🇷 韩国手动"},
+      {"inbound": "tw-in", "outbound": "🇹🇼 台湾手动"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"ip_is_private": true, "ip_cidr": ["198.41.192.0/24","198.41.200.0/24","51.83.15.212/32"], "outbound": "🎯 全球直连"},
       {"port": [21,22,3306,61028], "outbound": "🎯 全球直连"},
@@ -161,6 +167,42 @@
       "tag": "direct-in",
       "listen": "::",
       "listen_port": 20000
+    },
+    {
+      "type": "socks",
+      "tag": "hk-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20100
+    },
+    {
+      "type": "socks",
+      "tag": "tw-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20200
+    },
+    {
+      "type": "socks",
+      "tag": "jp-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20300
+    },
+    {
+      "type": "socks",
+      "tag": "sg-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20400
+    },
+    {
+      "type": "socks",
+      "tag": "us-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20500
+    },
+    {
+      "type": "socks",
+      "tag": "kr-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20600
     },
     {
       "tag": "socks-in",
