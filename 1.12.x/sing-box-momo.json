@@ -10,7 +10,7 @@
       {"clash_mode": "global", "server": "foreign"},
       {"query_type": "HTTPS", "action": "reject"},
       {"inbound": ["direct-in"], "server": "local"},
-      {"domain_suffix": ["177757.xyz","182682.xyz","cnae.top","19931110.xyz","468123.xyz","nexusmods.com","3666888.xyz","090227.xyz","saas.sin.fan"], "server": "local"},
+      {"domain_suffix": ["177757.xyz","182682.xyz","cnae.top","19931110.xyz","468123.xyz","nexusmods.com","3666888.xyz","090227.xyz","saas.sin.fan"], "server": "local","rewrite_ttl": 180},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com","anyrouter.top","openai.api-test.us.ci","api.freestyle.cc.cd","anthorpic.us.ci"], "server": "foreign"},
       {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"}
     ],
