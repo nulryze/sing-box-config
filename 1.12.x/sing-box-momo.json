@@ -6,17 +6,17 @@
       {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "DNS"}
     ],
     "rules": [
-      {"clash_mode": "direct", "server": "local"},
-      {"clash_mode": "global", "server": "foreign"},
+      {"clash_mode": "direct", "server": "local","strategy": "prefer_ipv4"},
+      {"clash_mode": "global", "server": "foreign","strategy": "ipv4_only"},
       {"query_type": "HTTPS", "action": "reject"},
-      {"inbound": ["direct-in"], "server": "local"},
-      {"domain_suffix": ["177757.xyz","182682.xyz","cnae.top","19931110.xyz","468123.xyz","nexusmods.com","3666888.xyz","090227.xyz","saas.sin.fan"], "server": "local", "disable_cache": true},
-      {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com","anyrouter.top","openai.api-test.us.ci","api.freestyle.cc.cd","anthorpic.us.ci"], "server": "foreign"},
-      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"}
+      {"inbound": ["direct-in"], "server": "local","strategy": "prefer_ipv4"},
+      {"domain_suffix": ["177757.xyz","182682.xyz","cnae.top","19931110.xyz","468123.xyz","nexusmods.com","3666888.xyz","090227.xyz","saas.sin.fan"], "server": "local", "disable_cache": true,"strategy": "prefer_ipv4"},
+      {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com","anyrouter.top","openai.api-test.us.ci","api.freestyle.cc.cd","anthorpic.us.ci"], "server": "foreign","strategy": "ipv4_only"},
+      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local","strategy": "prefer_ipv4"}
     ],
     "final": "foreign",
     "strategy": "prefer_ipv4",
-    "disable_cache": false,
+    "strategy": "ipv4_only",
     "reverse_mapping": true
   },
   "outbounds": [
