@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "udp", "server": "223.5.5.5"},
+      {"tag": "local", "type": "udp", "server": "223.6.6.6"},
       {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
       {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "DNS"},
       {"tag": "fake-ip-dns-server", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
@@ -18,7 +18,6 @@
       {"query_type": ["A", "AAAA"], "server": "fake-ip-dns-server", "rewrite_ttl": 1}
     ],
     "final": "foreign",
-    "client_subnet": "223.5.5.0/24",
     "strategy": "prefer_ipv4",
     "independent_cache": true,
     "reverse_mapping": true
